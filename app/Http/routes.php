@@ -10,24 +10,38 @@
 |
 */
 
-Route::get('/',function(){
-	return 'start';
-});
 
-Route::get('login',function(){return View::make('idea.login');});
-Route::post('checkLogin','IdeaController@checkLogin');
-Route::get('logout','IdeaController@logout');
-Route::get('createAccount',function(){return View::make('idea.create');});
-Route::post('create','IdeaController@create');
-/*
-Route::post('login',array('befor'=>'csrf',function(){
-	$inputs = Input::only(array('student_id','pass'));
-	dd($inputs);
-}));
-*/
-Route::get('show/{student_id}','IdeaController@showTeachers');
-Route::get('recommend/{id}','IdeaController@showRecommendBook');
-Route::get('details/{book_id}','IdeaController@bookDetails');
+
+ Route::get('/','JQueryController@index');
+ Route::get('auth','JQueryController@auth');
+
+// Route::get('/',function(){
+// 	return 'ok?';
+// });
+
+
+
+
+
+
+// Route::get('/',function(){
+// 	return 'start';
+// });
+
+// Route::get('login',function(){return View::make('idea.login');});
+// Route::post('checkLogin','IdeaController@checkLogin');
+// Route::get('logout','IdeaController@logout');
+// Route::get('createAccount',function(){return View::make('idea.create');});
+// Route::post('create','IdeaController@create');
+// /*
+// Route::post('login',array('befor'=>'csrf',function(){
+// 	$inputs = Input::only(array('student_id','pass'));
+// 	dd($inputs);
+// }));
+// */
+// Route::get('show/{student_id}','IdeaController@showTeachers');
+// Route::get('recommend/{id}','IdeaController@showRecommendBook');
+// Route::get('details/{book_id}','IdeaController@bookDetails');
 
 
 //Route::resource('login','IdeaController');
