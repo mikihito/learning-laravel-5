@@ -11,7 +11,14 @@
 	</div>
 
 	<div class="container">
-	@yield('content')
+		<div class="leftNav">
+		@yield('leftNav')
+		</div>
+
+		<div class="mainCont">
+		@yield('mainCont')
+		</di>
+		
 	</div>
 
 

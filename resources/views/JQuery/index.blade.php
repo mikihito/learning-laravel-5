@@ -4,7 +4,7 @@
 	<h1>index</h1>
 @stop
 
-@section('content')
+@section('mainCont')
 
 
 

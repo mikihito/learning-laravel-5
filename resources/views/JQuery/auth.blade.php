@@ -5,7 +5,7 @@
 @stop
 
 
-@section('content')
+@section('mainCont')
 
 
 @stop
